@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContaBanco</title>
+</head>
+<body>
+    
+    <style>
+        fieldset {
+            width: 50vh;
+        }
+    </style>
+<center>
+    <fieldset>
+        <h1>BANCO</h1>
+        <form action="ContaBanco.php" method="post">
+            <input type="hidden" name="action" value="abrirConta">
+            <label for="numConta">Número da Conta:</label>
+            <input type="text" id="numConta" name="numConta" required><br><br>
+
+            <label for="tipo">Tipo de Conta:</label>
+            <select id="tipo" name="tipo">
+                <option value="CC">Conta Corrente</option>
+                <option value="CP">Conta Poupança</option>
+            </select><br><br>
+
+            <label for="dono">Nome do Dono:</label>
+            <input type="text" id="dono" name="dono" required><br><br>
+
+            <input type="submit" value="Abrir Conta">
+        </form>
+    </fieldset>
+
+    <br><br>
+
+    <fieldset>
+        <h2>Operações</h2>
+        <form action="ContaBanco.php" method="post">
+            <input type="hidden" name="action" value="depositar">
+            <label for="numContaOperacao">Número da Conta:</label>
+            <input type="text" id="numContaOperacao" name="numConta" required><br><br>
+
+            <label for="valor">Valor:</label>
+            <input type="text" id="valor" name="valor" required><br><br>
+
+            <input type="submit" value="Depositar">
+        </form>
+
+        <br><br>
+
+        <form action="ContaBanco.php" method="post">
+            <input type="hidden" name="action" value="sacar">
+            <label for="numContaOperacao2">Número da Conta:</label>
+            <input type="text" id="numContaOperacao2" name="numConta" required><br><br>
+
+            <label for="valor">Valor:</label>
+            <input type="text" id="valor" name="valor" required><br><br>
+
+            <input type="submit" value="Sacar">
+        </form>
+
+        <br><br>
+
+        <form action="ContaBanco.php" method="post">
+            <input type="hidden" name="action" value="pagarMensalidade">
+            <label for="numContaOperacao3">Número da Conta:</label>
+            <input type="text" id="numContaOperacao3" name="numConta" required><br><br>
+
+            <input type="submit" value="Pagar Mensalidade">
+        </form>
+
+        <br><br>
+
+        <form action="ContaBanco.php" method="post">
+            <input type="hidden" name="action" value="fecharConta">
+            <label for="numContaOperacao4">Número da Conta:</label>
+            <input type="text" id="numContaOperacao4" name="numConta" required><br><br>
+
+            <input type="submit" value="Fechar Conta">
+        </form>
+
+        <br><br>
+
+        <form action="ContaBanco.php" method="post">
+            <input type="hidden" name="action" value="reativarConta">
+            <label for="numContaOperacao5">Número da Conta:</label>
+            <input type="text" id="numContaOperacao5" name="numConta" required><br><br>
+
+            <input type="submit" value="Reativar Conta">
+        </form>
+    </fieldset>
+    
+</center>
+
+</body>
+</html>
