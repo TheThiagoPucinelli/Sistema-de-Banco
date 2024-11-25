@@ -1,4 +1,4 @@
-  Olá Me chamo Thiago, e este é uma atividade acadêmica do meu segundo Semestre.
+  Olá Me chamo Thiago, e esta é uma atividade acadêmica do meu segundo Semestre.
   
 **Este sistema é um sistema "simples" de Banco onde é possivel cadastrar contas do tipo Conta Corrente e Conta Poupança havendo diferenças entre si,
 para criar uma conta basta digitar um número para a conta, inserir um nome e selecionar o tipo de conta.
